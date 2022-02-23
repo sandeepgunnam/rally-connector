@@ -1,0 +1,9 @@
+2019-07-15 17:12:16.793 Following entries record Rally REST API interaction via https://rally1.rallydev.com/slm/webservice/v2.0 for user: None
+2019-07-15 17:12:16.795 GET Defect?fetch=ObjectID&query=(FormattedID = "DE19501")&workspace=workspace/510018217&project=project/214359360892&projectScopeUp=false&projectScopeDown=false&pagesize=500&start=1
+2019-07-15 17:12:16.881 200 Defect?fetch=ObjectID&query=(FormattedID%20%3D%20%22DE19501%22)&workspace=workspace/510018217&project=project TotalResultCount 1
+2019-07-15 17:12:16.882 GET https://rally1.rallydev.com/slm/webservice/v2.0/attributedefinition/-10523/AllowedValues?pagesize=500&start=1&workspace=workspace/510018217&project=project/214359360892
+2019-07-15 17:12:16.955 200 attributedefinition/-10523/AllowedValues?pagesize=500&start=1&workspace=workspace/510018217&project=project TotalResultCount 0
+2019-07-15 17:12:16.956 POST defect/309435993920?key=None&workspace=workspace/510018217&project=project/214359360892&projectScopeUp=false&projectScopeDown=false
+                            {u'Defect': {u'FormattedID': u'DE19501', u'Priority': u'Normal', 'c_ServiceNowID': {u'DisplayString': u'PRB0001012', u'LinkID': u'PRB0001012'}, 'ObjectID': 309435993920}}
+2019-07-15 17:12:17.153 GET Defect/309435993920?workspace=workspace/510018217&project=project/214359360892&projectScopeUp=false&projectScopeDown=false
+2019-07-15 17:12:17.244 200 Defect/309435993920?workspace=workspace/510018217&project=project/214359360892&projectScopeUp=false&projectScopeDown=false
