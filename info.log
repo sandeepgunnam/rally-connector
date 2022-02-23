@@ -1,0 +1,995 @@
+2019-02-19 15:29:58,565 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-02-19 16:43:16,107 - flask.app - ERROR - Exception on /rally/api/v1/getProjects [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 50, in post_subscribe
+    rally = Rally(server, user, password, apikey=apikey, workspace=workspace, project=project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 185, in check
+    raise RallyRESTAPIError(problem % (len(workspaces), workspace))
+RallyRESTAPIError: Multiple workspaces (7) found with the same name of 'Red Hat IT Workspace'.  You must specify a workspace with a unique name.
+2019-02-19 16:43:31,547 - flask.app - ERROR - Exception on /rally/api/v1/getProjects [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 50, in post_subscribe
+    rally = Rally(server, user, password, apikey=apikey, workspace=workspace, project=project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 185, in check
+    raise RallyRESTAPIError(problem % (len(workspaces), workspace))
+RallyRESTAPIError: Multiple workspaces (7) found with the same name of 'Red Hat IT Workspace'.  You must specify a workspace with a unique name.
+2019-02-19 16:44:47,151 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-02-19 17:34:52,921 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-02-20 08:10:28,991 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-06 13:27:10,869 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-07 13:21:52,765 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-11 12:42:00,419 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-11 14:12:45,246 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-11 14:13:03,815 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-11 14:13:29,704 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-11 14:16:33,090 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-03-11 14:18:13,604 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-03-11 14:18:53,704 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-03-11 14:19:30,197 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-03-11 14:19:52,727 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-03-11 14:20:36,919 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-12 14:17:00,491 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-14 14:00:21,531 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-21 08:55:42,797 - waitress.queue - WARNING - Task queue depth is 1
+2019-03-21 08:55:42,799 - waitress.queue - WARNING - Task queue depth is 2
+2019-03-21 08:55:48,649 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 139, in post_update_object
+    rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1078, in post
+    itemData = self.validateAttributeNames(entityName, itemData)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1418, in validateAttributeNames
+    entity_attributes = entity_def.Attributes
+AttributeError: 'NoneType' object has no attribute 'Attributes'
+2019-03-22 14:09:35,249 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-22 14:16:50,013 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-22 14:30:37,716 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-25 07:52:13,197 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-25 08:43:48,949 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-03-25 08:47:31,117 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 149, in post_update_object
+    rally.create('ConversationPost', {"Artifact": j['entityOID'], "Text": j['entityComment']})
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1024, in put
+    raise RallyRESTAPIError(problem)
+RallyRESTAPIError: 422 Validation error: ConversationPost.Text length is greater than the maximum length of 32768
+2019-04-02 16:58:23,617 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-02 17:20:25,245 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-02 17:23:05,775 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 162, in post_update_object
+    if rObject['Owner'] == None:
+TypeError: 'Defect' object has no attribute '__getitem__'
+2019-04-02 17:35:14,389 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 07:39:37,824 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:02:34,845 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:04:56,054 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:05:14,669 - flask.app - ERROR - Exception on /rally/api/v1/getUsers [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 117, in get_users
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+UnboundLocalError: local variable 'user' referenced before assignment
+2019-04-03 08:05:50,280 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:05:55,442 - flask.app - ERROR - Exception on /rally/api/v1/getUsers [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 117, in get_users
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+UnboundLocalError: local variable 'user' referenced before assignment
+2019-04-03 08:07:42,175 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:09:58,794 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:10:54,498 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:11:50,247 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:13:17,901 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:14:34,244 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:15:21,203 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:15:28,129 - flask.app - ERROR - Exception on /rally/api/v1/getUsers [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 125, in get_users
+    rusers = rally.get('User', query='EmailAddress = "'+j['singlUserEmailAddress']+'"')
+KeyError: 'singlUserEmailAddress'
+2019-04-03 08:15:46,079 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:27:50,000 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:29:25,724 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 08:48:46,351 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 09:28:25,356 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 10:24:37,533 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-03 14:28:18,247 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-04 14:45:14,550 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-08 14:09:44,282 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 14:18:08,946 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 14:18:31,903 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 14:26:50,063 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 14:27:31,293 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 14:33:11,356 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 16:05:58,935 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 16:06:15,741 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-08 16:11:51,596 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-23 16:27:12,823 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-23 16:27:30,940 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-25 14:45:39,519 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-25 14:46:06,859 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-26 12:28:29,206 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-26 12:29:01,437 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project='Team: AppDev')
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: AppDev'
+2019-04-29 12:12:37,700 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-04-29 12:20:33,701 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE could not be located
+2019-04-29 12:20:38,660 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE could not be located
+2019-04-29 13:17:06,601 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 201, in post_update_object
+    rObject = rally.put(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1024, in put
+    raise RallyRESTAPIError(problem)
+RallyRESTAPIError: 422 Could not convert: "ScheduleState" must be a string : Value [ Draft ] for field [ string ] is invalid.  Valid values are: [ Backlog, Defined, In-Progress, Completed, Accepted ]
+2019-05-17 13:06:20,713 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US192146 could not be located
+2019-05-17 13:06:21,300 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US209517 could not be located
+2019-05-17 13:06:21,892 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US188304 could not be located
+2019-05-17 13:06:22,317 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US179144 could not be located
+2019-05-17 13:06:25,998 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US179125 could not be located
+2019-05-17 13:06:31,172 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US213041 could not be located
+2019-05-17 13:06:35,268 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US180918 could not be located
+2019-05-17 13:06:36,336 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US179145 could not be located
+2019-06-12 11:31:06,431 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE18143 could not be located
+2019-06-12 11:31:34,771 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE17566 could not be located
+2019-06-12 11:31:58,811 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE17659 could not be located
+2019-06-12 11:32:20,516 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE17825 could not be located
+2019-06-13 11:37:46,607 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US217677 could not be located
+2019-06-13 15:58:21,887 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US217750 could not be located
+2019-06-13 16:24:49,075 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US217756 could not be located
+2019-06-21 12:43:34,632 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE18799 could not be located
+2019-06-21 12:43:35,177 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US206391 could not be located
+2019-06-24 11:28:07,631 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target HierarchicalRequirement US163629 could not be located
+2019-07-15 16:58:48,954 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 204, in post_update_object
+    else: rObject = rally.post(j['entityName'], j['entityBody'])
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 1067, in post
+    raise RallyRESTAPIError('Target %s %s could not be located' % (entityName, formattedID))
+RallyRESTAPIError: Target Defect DE19501 could not be located
+2019-07-15 17:04:34,712 - __main__ - INFO - Python: 2.7.15 (default, Jun 19 2018, 05:50:05) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-07-15 17:05:06,924 - flask.app - ERROR - Exception on /rally/api/v1/updateObject [POST]
+Traceback (most recent call last):
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./app.py", line 172, in post_update_object
+    rally = Rally(server, user, password, apikey=apikey, workspace='Red Hat IT Workspace', project=project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/restapi.py", line 259, in __init__
+    self.contextHelper.check(self.server, wksp, proj, self.isolated_workspace)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 202, in check
+    self._setOperatingContext(project)
+  File "/opt/rally-connector/env/lib/python2.7/site-packages/pyral/context.py", line 340, in _setOperatingContext
+    raise RallyRESTAPIError(problem % (self._currentWorkspace, project_name))
+RallyRESTAPIError: The current Workspace 'Red Hat IT Workspace' does not contain an accessible Project with the name of 'Team: IT Service Management'
+2019-07-18 11:25:37,511 - __main__ - INFO - Python: 2.7.15 (default, Jul 25 2018, 16:42:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2019-08-07 17:29:19,074 - __main__ - INFO - Python: 2.7.15 (default, Jul 25 2018, 16:42:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2020-10-24 10:40:46,004 - __main__ - INFO - Python: 2.7.15 (default, Jul 25 2018, 16:42:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2020-12-08 10:07:58,384 - __main__ - INFO - Python: 2.7.15 (default, Jul 25 2018, 16:42:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+2021-04-03 10:00:47,946 - __main__ - INFO - Python: 2.7.15 (default, Jul 25 2018, 16:42:58) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
